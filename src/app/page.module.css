@@ -41,9 +41,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(2, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+  gap: 1rem;
 }
 
 .card {
@@ -107,6 +108,13 @@
 .logo {
   position: relative;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -133,7 +141,6 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
