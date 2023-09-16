@@ -1,7 +1,27 @@
 {
   "name": "react-konva-to-svg",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
+  "keywords": [
+    "react-konva",
+    "react-konva-components",
+    "react-konva-utils",
+    "react-konva-export",
+    "canvas-api",
+    "svg-canvas",
+    "react-konva-to-svg",
+    "canvas",
+    "svg",
+    "konva"
+  ],
+  "description": "Extend Konva's functionality to export stages as SVG. Enhance the quality of exported images with SVG format.",
+  "author": "dendrofen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dendrofen/react-konva-to-svg.git"
+  },
+  "homepage": "https://dendrofen.github.io/react-konva-to-svg/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,11 +29,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "konva": "^9.2.0",
+    "react-konva": "^18.2.10",
+    "svgcanvas": "^2.5.0"
+  },
+  "devDependencies": {
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
     "konva": "^9.2.0",
     "next": "13.4.13",
-    "react": "18.2.0",
+    "react": "^18.2.0",
     "react-dom": "18.2.0",
     "react-konva": "^18.2.10",
     "svgcanvas": "^2.5.0"

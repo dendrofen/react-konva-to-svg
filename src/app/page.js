@@ -21,7 +21,7 @@ export default function Home() {
           color="#fff"
           viewBox="0 0 250 250"
           style={{ position: "absolute", top: "0", border: "0", right: "0" }}
-          ariaHidden="true"
+          aria-hidden="true"
         >
           <path d="M0 0l115 115h15l12 27 108 108V0z"></path>
           <path

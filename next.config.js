@@ -2,7 +2,7 @@
 
 const nextConfig = {
     output: 'export',
-    basePath: '/konva-react-to-svg',
+    basePath: '/react-konva-to-svg',
     images: {
         unoptimized: true,
     },

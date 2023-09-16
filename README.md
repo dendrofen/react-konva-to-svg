@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# react-konva-to-svg
 
-## Getting Started
+**Extend Konva's functionality to export stages as SVG. Enhance the quality of exported images with SVG format.**
 
-First, run the development server:
+[![GitHub License](https://img.shields.io/github/license/dendrofen/react-konva-to-svg)](LICENSE)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Features
+
+- Export Konva stages to SVG format.
+- Asynchronous export with progress tracking.
+- Before and after export callbacks for custom processing.
+- Flexible context with a function that handles Konva stage objects.
+- Export results as text SVG or Blob SVG.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+You can install `react-konva-to-svg` using npm, yarn, or directly from GitHub.
+
+- **npm**: `npm install react-konva-to-svg`
+- **yarn**: `yarn add react-konva-to-svg`
+- **GitHub**: [GitHub Repository](https://github.com/dendrofen/react-konva-to-svg)
+
+## Usage
+
+To use `react-konva-to-svg`, import the library and utilize the `exportStageSVG` function with your Konva stage object. This function allows you to customize the export process.
+
+### `exportStageSVG(stage, blob, options)`
+
+- `stage`: The Konva stage object you want to export.
+- `blob` (optional): Set to `true` to export as Blob SVG, or `false` (default) to export as text SVG.
+- `options` (optional): An object containing the following callbacks:
+  - `onBefore`: A callback function called before export. Receives an array `[stage, layer]` as an argument.
+  - `onAfter`: A callback function called after export. Receives an array `[stage, layer]` as an argument.
+
+**Example usage:**
+
+```javascript
+import { exportStageSVG } from 'react-konva-to-svg';
+
+// Example usage
+const stage = /* your Konva stage */;
+const result = await exportStageSVG(stage, false, {
+  onBefore: ([stage, layer]) => {
+    // Perform actions before export
+  },
+  onAfter: ([stage, layer]) => {
+    // Perform actions after export
+  },
+});
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Explore a live demo of react-konva-to-svg in action: [Demo](https://dendrofen.github.io/react-konva-to-svg/)
