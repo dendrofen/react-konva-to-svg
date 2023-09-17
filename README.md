@@ -3,6 +3,9 @@
 **Extend Konva's functionality to export stages as SVG. Enhance the quality of exported images with SVG format.**
 
 [![GitHub License](https://img.shields.io/github/license/dendrofen/react-konva-to-svg)](LICENSE)
+[![Build Size](https://img.shields.io/bundlephobia/minzip/react-konva-to-svg?label=bundle%20size&style=flat&colorA=000000&colorB=000000)](https://bundlephobia.com/result?p=react-konva-to-svg)
+[![Version](https://img.shields.io/npm/v/react-konva-to-svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/react-konva-to-svg)
+[![Downloads](https://img.shields.io/npm/dt/react-konva-to-svg.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/react-konva-to-svg)
 
 ## Features
 
