@@ -1,6 +1,6 @@
 {
   "name": "react-konva-to-svg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "keywords": [
     "react-konva",
@@ -17,6 +17,10 @@
   "description": "Extend Konva's functionality to export stages as SVG. Enhance the quality of exported images with SVG format.",
   "author": "dendrofen",
   "license": "MIT",
+  "main": "react-konva-to-svg/index.js",
+  "files": [
+    "react-konva-to-svg"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dendrofen/react-konva-to-svg.git"

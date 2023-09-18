@@ -1,6 +1,6 @@
 import styles from '@/app/page.module.css';
-import { exportStageSVG } from "@/lib";
 import { startTransition, useCallback, useState } from "react";
+import { exportStageSVG } from '../../react-konva-to-svg';
 
 export default function ProcessButtons() {
     const [image, setImage] = useState();
