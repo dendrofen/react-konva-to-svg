@@ -61,6 +61,11 @@ const result = await exportStageSVG(stage, false, {
 });
 ```
 
+## Compatibility Notice
+
+#### Node or group does not rendering properly
+If some of nodes, or any group does not rendering properly - use node [caching](https://konvajs.org/docs/performance/Shape_Caching.html) for incorrect rendered node withing **onBefore** function.
+
 ## Demo
 
 Explore a live demo of react-konva-to-svg in action: [Demo](https://dendrofen.github.io/react-konva-to-svg/)
