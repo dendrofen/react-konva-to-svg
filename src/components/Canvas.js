@@ -45,6 +45,7 @@ export default function Canvas() {
                     />
                     <Text
                         text="Rect + Text Group"
+                        fontFamily="cursive"
                         width={width / 4}
                         height={height / 4}
                         align="center"
