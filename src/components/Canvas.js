@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Group, Image, Layer, Line, Rect, Stage, Text } from "react-konva";
+import { Arc, Ellipse, Group, Image, Layer, Line, Rect, Stage, Text } from "react-konva";
 
 const CustomImage = ({ src, ...props }) => {
     const [image, setImage] = useState();
@@ -60,6 +60,18 @@ export default function Canvas() {
                     x={width / 4}
                     draggable
                 />
+
+                <Ellipse fill="red" radiusX={10} radiusY={10} x={width / 2} y={height / 2} />
+
+                <Text
+                    x={width / 3}
+                    y={height / 1.8}
+                    text="Use Arc, instead of Ellipse. Red - Ellipse, Green - Arcs. (see example)"
+
+                    width={width / 2}
+                />
+                <Arc outerRadius={10} angle={360} x={width / 3} y={height / 2} fill={'green'} strokeEnabled={false} />
+                <Arc outerRadius={10} angle={360} x={width / 1.5} y={height / 2} fill={'green'} strokeEnabled={false} />
 
                 {lines.map((points, key) =>
                     <Line
