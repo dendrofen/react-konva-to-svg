@@ -15,15 +15,6 @@
 - Flexible context with a function that handles Konva stage objects.
 - Export results as text SVG or Blob SVG.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Example](#example)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 You can install `react-konva-to-svg` using npm, yarn, or directly from GitHub.
